@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Український Бізнес</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #f8f8f8; padding: 20px; text-align: center; }
+    nav { background: #333; color: #fff; padding: 10px; text-align: center; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    section { padding: 40px; max-width: 900px; margin: auto; }
+    h2 { color: #333; }
+    .business { margin-bottom: 50px; }
+    .button { background: #007BFF; color: #fff; padding: 10px 20px; border: none; cursor: pointer; margin-top: 10px; }
+    .button:hover { background: #0056b3; }
+    .modal {
+      display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6); z-index: 1000; justify-content: center; align-items: center;
+    }
+    .modal-content {
+      background: #fff; padding: 20px; border-radius: 5px; width: 80%; max-width: 600px;
+    }
+    .close { float: right; font-size: 20px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Підтримай український бізнес</h1>
+</header>
+
+<nav>
+  <a href="#it">IT</a>
+  <a href="#agro">Агро</a>
+  <a href="#coffee">Кава</a>
+  <a href="#logistics">Логістика</a>
+</nav>
+
+<section id="it" class="business">
+  <h2>IT-компанія "CodeUA"</h2>
+  <p>Розробка додатків, вебсайтів та ПЗ для бізнесу в Україні.</p>
+  <button class="button" onclick="showModal('modal-it')">Дізнатися більше</button>
+</section>
+
+<section id="agro" class="business">
+  <h2>Агробізнес "ЗерноLife"</h2>
+  <p>Органічне фермерство та сучасні агротехнології.</p>
+  <button class="button" onclick="showModal('modal-agro')">Детальніше</button>
+</section>
+
+<section id="coffee" class="business">
+  <h2>Кав'ярня "Кава по-Київськи"</h2>
+  <p>Сучасна кавова культура у серці столиці.</p>
+  <button class="button" onclick="showModal('modal-coffee')">Переглянути меню</button>
+</section>
+
+<section id="logistics" class="business">
+  <h2>Логістика "ТранспортUA"</h2>
+  <p>Швидка доставка по Україні та за кордон.</p>
+  <button class="button" onclick="showModal('modal-logistics')">Зв’язатися</button>
+</section>
+
+<footer>
+  &copy; 2025 Український Бізнес
+</footer>
+
+<!-- Модальні вікна -->
+<div class="modal" id="modal-it">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-it')">&times;</span>
+    <h3>Про компанію CodeUA</h3>
+    <p>Компанія CodeUA надає послуги з IT-консалтингу, розробки мобільних додатків і корпоративного програмного забезпечення для українського бізнесу.</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-agro">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-agro')">&times;</span>
+    <h3>Про ЗерноLife</h3>
+    <p>"ЗерноLife" вирощує органічну пшеницю, соняшник та овочі, впроваджуючи інноваційні підходи до зрошення та обробки ґрунтів.</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-coffee">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-coffee')">&times;</span>
+    <h3>Меню "Кава по-Київськи"</h3>
+    <p>Пропонуємо свіжообсмажену каву, десерти ручної роботи та сезонні напої. Меню постійно оновлюється!</p>
+  </div>
+</div>
+
+<div class="modal" id="modal-logistics">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-logistics')">&times;</span>
+    <h3>Контакти ТранспортUA</h3>
+    <p>Зателефонуйте нам за номером +380 44 123 4567 або напишіть на info@transportua.ua для організації доставки.</p>
+  </div>
+</div>
+
+<script>
+  function showModal(id) {
+    document.getElementById(id).style.display = 'flex';
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+  window.onclick = function(event) {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+      if (event.target === modal) modal.style.display = 'none';
+    });
+  }
+</script>
+
+</body>
+</html>
