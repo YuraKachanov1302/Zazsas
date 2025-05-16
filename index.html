@@ -22,6 +22,7 @@
       background: #fff; padding: 20px; border-radius: 5px; width: 80%; max-width: 600px;
     }
     .close { float: right; font-size: 20px; cursor: pointer; }
+    img { width: 100%; height: auto; border-radius: 10px; margin-top: 15px; }
   </style>
 </head>
 <body>
@@ -40,24 +41,28 @@
 <section id="it" class="business">
   <h2>IT-компанія "CodeUA"</h2>
   <p>Розробка додатків, вебсайтів та ПЗ для бізнесу в Україні.</p>
+  <img src="https://source.unsplash.com/800x400/?technology" alt="IT Image">
   <button class="button" onclick="showModal('modal-it')">Дізнатися більше</button>
 </section>
 
 <section id="agro" class="business">
   <h2>Агробізнес "ЗерноLife"</h2>
   <p>Органічне фермерство та сучасні агротехнології.</p>
+  <img src="https://source.unsplash.com/800x400/?farm" alt="Agro Image">
   <button class="button" onclick="showModal('modal-agro')">Детальніше</button>
 </section>
 
 <section id="coffee" class="business">
   <h2>Кав'ярня "Кава по-Київськи"</h2>
   <p>Сучасна кавова культура у серці столиці.</p>
+  <img src="https://source.unsplash.com/800x400/?coffee" alt="Coffee Image">
   <button class="button" onclick="showModal('modal-coffee')">Переглянути меню</button>
 </section>
 
 <section id="logistics" class="business">
   <h2>Логістика "ТранспортUA"</h2>
   <p>Швидка доставка по Україні та за кордон.</p>
+  <img src="https://source.unsplash.com/800x400/?logistics" alt="Logistics Image">
   <button class="button" onclick="showModal('modal-logistics')">Зв’язатися</button>
 </section>
 
@@ -70,7 +75,7 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal-it')">&times;</span>
     <h3>Про компанію CodeUA</h3>
-    <p>Компанія CodeUA надає послуги з IT-консалтингу, розробки мобільних додатків і корпоративного програмного забезпечення для українського бізнесу.</p>
+    <p>Компанія CodeUA спеціалізується на розробці мобільних і вебдодатків, CRM-систем, а також надає послуги з кібербезпеки. Ми співпрацюємо з малим та середнім бізнесом по всій Україні.</p>
   </div>
 </div>
 
@@ -78,7 +83,7 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal-agro')">&times;</span>
     <h3>Про ЗерноLife</h3>
-    <p>"ЗерноLife" вирощує органічну пшеницю, соняшник та овочі, впроваджуючи інноваційні підходи до зрошення та обробки ґрунтів.</p>
+    <p>"ЗерноLife" вирощує органічну продукцію на власних полях у Полтавській області. Ми експортуємо зерно та підтримуємо внутрішній ринок, впроваджуючи точне землеробство та інноваційні методи агровиробництва.</p>
   </div>
 </div>
 
@@ -86,7 +91,7 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal-coffee')">&times;</span>
     <h3>Меню "Кава по-Київськи"</h3>
-    <p>Пропонуємо свіжообсмажену каву, десерти ручної роботи та сезонні напої. Меню постійно оновлюється!</p>
+    <p>Меню включає: капучино, лате, еспресо, флэт-вайт, сезонні напої, десерти — медовик, чизкейк, макаруни. Продукти — виключно українського виробництва.</p>
   </div>
 </div>
 
@@ -94,7 +99,7 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal-logistics')">&times;</span>
     <h3>Контакти ТранспортUA</h3>
-    <p>Зателефонуйте нам за номером +380 44 123 4567 або напишіть на info@transportua.ua для організації доставки.</p>
+    <p>Телефонуйте за номером +380 44 123 4567 або пишіть на info@transportua.ua. Пропонуємо індивідуальні рішення з логістики, включаючи міжнародні перевезення, експрес-доставку та зберігання товарів.</p>
   </div>
 </div>
 
@@ -115,3 +120,4 @@
 
 </body>
 </html>
+
